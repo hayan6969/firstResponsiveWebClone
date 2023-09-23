@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(../resources/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  z-index: 1;
+}
+.nav1 {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  width: 300px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.nav2 {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  width: 600px;
+  margin-left: 170px;
+}
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav2 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #18d26e;
+  transition: 0.3s;
+  text-decoration-thickness: 2px;
+}
+.nav3 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  color: white;
+}
+.nav3 i:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1005px) {
+  .nav2 {
+    display: none;
+  }
+  .nav3 {
+    display: flex;
+    margin-right: 20px;
+  }
+  .nav1 {
+    margin-left: 20px;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+}
+.Contact {
+  position: relative;
+  top: 100px;
+  height: auto;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+
+  padding-left: 135px;
+}
+.r1 {
+  height: auto;
+  width: 81%;
+  color: white;
+}
+.r-text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 40px;
+  width: 100%;
+  margin-left: 6px;
+  background-color: black;
+}
+.r-text1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  margin-left: 30px;
+}
+.r-text1 p {
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.r-line {
+  height: 2px;
+  width: 120px;
+  background-color: #18d26e;
+}
+.r2 {
+  height: auto;
+  width: 81%;
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  width: 88%;
+}
+.m1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 48%;
+  background: rgba(159, 146, 146, 0.08);
+  cursor: pointer;
+}
+
+.mleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #18d26e;
+}
+.mright {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  color: white;
+}
+.cont {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+.mright .fa-brands {
+  font-size: 21px;
+  transition: 0.3s;
+}
+.mright .fa-brands:hover {
+  color: #18d26e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.m2 {
+  height: 40px;
+  width: 48%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+.m3 {
+  height: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+.m4 {
+  height: 300px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+input {
+  height: 100%;
+  width: 100%;
+  all: unset;
+  color: white;
+  font-size: 20px;
+}
+textarea {
+  height: 100%;
+  width: 100%;
+  all: unset;
+  color: white;
+  font-size: 18px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background-color: #18d26e;
+  margin-left: 36%;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 1005px) {
+  .main {
+    flex-direction: column;
+    align-items: start;
+  }
+  .m1 {
+    width: 100%;
+  }
+  .m2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Contact {
+    padding-left: 0px;
+  }
+  .main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .r-text {
+    padding-top: 22px;
+  }
+}

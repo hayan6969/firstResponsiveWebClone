@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../resources/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    
+}
+
+.headmain{
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 80%;
+}
+.head1{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.head2{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%px;
+        font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.graphic{
+    border-bottom: 2px #18d26e solid;
+    padding-bottom: 3px;
+    font-size: 30px;
+}
+.head3{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+@media screen and (max-width:992px) {
+    .head{
+        min-height: 100vh;
+        height: auto;
+    }
+    .headmain{
+        text-align: center;
+    }
+    .head3{
+        display: none;
+        justify-content: center;
+
+    }
+    .hamburger{
+        display: block;
+    }
+    .head1{
+        justify-content: center;
+        font-size: 40px;
+    }
+    .head2{
+        justify-content: center;
+    }
+    .head4{
+        justify-content: center;
+    }
+}
+.head3 a{
+    text-decoration:none;
+    color: white;
+    font-weight: 500;
+    padding-right: 20px;
+    transition: 0.3s;
+
+
+}
+.head3 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #18d26e;
+    text-decoration-thickness: 2px;
+    transition: 0.3s;
+}
+
+.head4{
+    display: flex;
+align-items: center;
+    height: 70px;
+    width: 100%;
+    /* background-color: white; */
+}
+.s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: white;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.s:hover{
+    background-color: #18d26e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
